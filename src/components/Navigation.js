@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './styles/Navigation.css';
 
 function Navigation() {
@@ -12,15 +12,19 @@ function Navigation() {
             <h2 className="logo">Space Travelers&apos; Hub</h2>
           </div>
           <div className="nav-items">
-            <Link to="/rockets" className="categories">
+            <NavLink to="/rockets" className="categories" activeclass="active">
               Rockets
-            </Link>
-            <Link to="/missions" className="categories">
+            </NavLink>
+            <NavLink to="/missions" className="categories" activeclass="active">
               Missions
-            </Link>
-            <Link to="/profile" className="categories border">
+            </NavLink>
+            <NavLink
+              to="/profile"
+              className="categories border"
+              activeclass="active"
+            >
               My Profile
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
