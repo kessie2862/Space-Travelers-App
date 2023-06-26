@@ -163,4 +163,4 @@ I would like to thank [akezeth](https://github.com/akezeth) for his contribution
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/kessie2862/Bookstore/blob/initialize-project/LICENSE) licensed.
+This project is [MIT](https://github.com/kessie2862/Space-Travelers-React-Group-Project/blob/dev/LICENSE) licensed.
