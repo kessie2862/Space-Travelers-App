@@ -12,7 +12,7 @@ function Navigation() {
             <h2 className="logo">Space Travelers&apos; Hub</h2>
           </div>
           <div className="nav-items">
-            <NavLink to="/rockets" className="categories" activeclass="active">
+            <NavLink to="/" className="categories" activeclass="active">
               Rockets
             </NavLink>
             <NavLink to="/missions" className="categories" activeclass="active">

@@ -1,7 +1,11 @@
+import Rocket from './Rocket';
+
 function Rockets() {
   return (
     <div className="container">
-      <h2>Rockets Page</h2>
+      <Rocket />
+      <Rocket />
+      <Rocket />
     </div>
   );
 }

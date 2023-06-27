@@ -19,7 +19,7 @@ body {
 .nav-container {
   margin: 0 auto;
   width: 95%;
-  padding: 2rem 0;
+  padding: 1.5rem 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,7 @@ body {
   border-bottom: 1px solid rgba(111, 111, 111, 0.6);
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .nav-left {
