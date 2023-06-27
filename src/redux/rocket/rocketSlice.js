@@ -30,7 +30,7 @@ const rocketSlice = createSlice({
         description: rocketDescription,
         flickr_images: images,
       };
-      state.Rockets.push(rocket);
+      state.rockets.push(rocket);
     },
   },
   extraReducers: (builder) => {
@@ -40,7 +40,7 @@ const rocketSlice = createSlice({
       })
       .addCase(fetchRockets.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.Rockets = action.payload.map((rocket) => ({
+        state.rockets = action.payload.map((rocket) => ({
           id: rocket.id,
           rocket_name: rocket.name,
           description: rocket.description,
