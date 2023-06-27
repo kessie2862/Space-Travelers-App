@@ -1,0 +1,37 @@
+li {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* gap: 1rem; */
+  padding-bottom: 1rem;
+}
+
+/* .imgContainer {
+  border: 3px solid greenyellow;
+} */
+
+.details {
+  padding-top: 0.25rem;
+  /* border: 3px solid greenyellow; */
+}
+
+.rocketName {
+  padding-bottom: 0.5rem;
+}
+
+.rocketDispription {
+  padding-bottom: 1rem;
+}
+
+.reservationBtn {
+  padding: 0.35rem 0.5rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #007BFF;
+  border-radius: 0.25rem;
+  transition: 0.05s;
+}
+
+.reservationBtn:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
