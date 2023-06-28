@@ -15,10 +15,11 @@ const missionSlice = createSlice({
     },
     leaveMission: (state, action) => {
       const missionId = action.payload;
-      state.missions = state.missions.map((mission) => (mission.mission_id === missionId
-        ? { ...mission, reserved: false }
-        : mission));
+      state.missions = state.missions.filter(
+        (mission) => mission.mission_id !== missionId,
+      );
     },
+
   },
 });
 
