@@ -1,19 +1,12 @@
-li {
+.listContainer {
   display: grid;
   grid-template-columns: 1fr 4fr;
-
-  /* gap: 1rem; */
+  gap: 1rem;
   padding-bottom: 1rem;
 }
 
-/* .imgContainer {
-  border: 3px solid greenyellow;
-} */
-
 .details {
   padding-top: 0.25rem;
-
-  /* border: 3px solid greenyellow; */
 }
 
 .rocketName {
