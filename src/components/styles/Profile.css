@@ -1,0 +1,32 @@
+.profile-container {
+  width: 50%;
+  text-align: left;
+}
+
+.profile-container h2 {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.joined-missions {
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.joined-missions h3 {
+  margin: 0 0 1.5rem 0;
+}
+
+.joined-missions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.joined-missions li {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem  0 1rem 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
