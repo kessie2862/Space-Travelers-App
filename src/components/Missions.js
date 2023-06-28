@@ -10,6 +10,7 @@ import './styles/Missions.css';
 function Missions() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.mission.missions);
+  const joinedMissions = useSelector((state) => state.mission.joinedMissions);
 
   useEffect(() => {
     const fetchMissions = async () => {
@@ -33,6 +34,9 @@ function Missions() {
     dispatch(leaveMission(missionId));
   };
 
+  const isMissionJoined = (missionId) => joinedMissions
+    .some((mission) => mission.mission_id === missionId);
+
   return (
     <div className="table-container">
       <table className="missions-table">
@@ -51,31 +55,41 @@ function Missions() {
               <td>
                 <div className="status-container">
                   <span
-                    className={`status ${mission.reserved ? 'active' : ''}`}
+                    className={`status ${
+                      isMissionJoined(mission.mission_id) ? 'active' : ''
+                    }`}
                     style={{
-                      backgroundColor: mission.reserved ? '#0290ff' : 'grey',
+                      backgroundColor: isMissionJoined(mission.mission_id)
+                        ? '#0290ff'
+                        : 'grey',
                     }}
                   >
-                    {mission.reserved ? 'ACTIVE MEMBER' : 'NOT A MEMBER'}
+                    {isMissionJoined(mission.mission_id)
+                      ? 'ACTIVE MEMBER'
+                      : 'NOT A MEMBER'}
                   </span>
                 </div>
               </td>
               <td>
                 <button
                   type="button"
-                  onClick={() => (mission.reserved
+                  onClick={() => (isMissionJoined(mission.mission_id)
                     ? handleLeaveMission(mission.mission_id)
                     : handleJoinMission(mission.mission_id))}
-                  className={`join-button ${mission.reserved ? 'active' : ''}`}
+                  className={`join-button ${
+                    isMissionJoined(mission.mission_id) ? 'active' : ''
+                  }`}
                   style={{
-                    border: mission.reserved
+                    border: isMissionJoined(mission.mission_id)
                       ? '2px solid red'
                       : '2px solid grey',
                     background: 'transparent',
-                    color: mission.reserved ? 'red' : 'grey',
+                    color: isMissionJoined(mission.mission_id) ? 'red' : 'grey',
                   }}
                 >
-                  {mission.reserved ? 'Leave Mission' : 'Join Mission'}
+                  {isMissionJoined(mission.mission_id)
+                    ? 'Leave Mission'
+                    : 'Join Mission'}
                 </button>
               </td>
             </tr>
