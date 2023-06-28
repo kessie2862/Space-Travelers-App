@@ -3,8 +3,9 @@ import { useSelector } from 'react-redux';
 import './styles/Profile.css';
 
 function Profile() {
-  const joinedMissions = useSelector((state) => state.mission
-    .missions.filter((mission) => mission.reserved));
+  const joinedMissions = useSelector(
+    (state) => state.mission.joinedMissions,
+  );
 
   return (
     <div className="profile-container">
