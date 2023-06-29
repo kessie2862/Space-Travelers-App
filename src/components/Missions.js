@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  setMissions,
-  joinMission,
-  leaveMission,
-} from '../redux/missions/missionSlice';
+import { fetchMissions, joinMission, leaveMission } from '../redux/missions/missionSlice';
 import './styles/Missions.css';
 
 function Missions() {
@@ -13,17 +9,7 @@ function Missions() {
   const joinedMissions = useSelector((state) => state.mission.joinedMissions);
 
   useEffect(() => {
-    const fetchMissions = async () => {
-      try {
-        const response = await fetch('https://api.spacexdata.com/v3/missions');
-        const data = await response.json();
-        dispatch(setMissions(data));
-      } catch (error) {
-        console.error('Error fetching missions:', error);
-      }
-    };
-
-    fetchMissions();
+    dispatch(fetchMissions());
   }, [dispatch]);
 
   const handleJoinMission = (missionId) => {
