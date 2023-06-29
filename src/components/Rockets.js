@@ -19,6 +19,7 @@ function Rockets() {
           image={rocket.image}
           name={rocket.rocket_name}
           description={rocket.description}
+          reserved={rocket.reserved}
         />
       ))}
     </div>
