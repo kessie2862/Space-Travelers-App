@@ -1,0 +1,51 @@
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.6rem 0.7rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.join-button {
+  border-radius: 0.2rem;
+  color: grey;
+  padding: 0.3rem 0.8rem;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.table-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.missions-table {
+  border-collapse: collapse;
+}
+
+.missions-table th,
+.missions-table thead,
+.missions-table td {
+  border: 2px solid rgba(111, 111, 111, 0.6);
+  padding: 1rem;
+  text-align: left;
+}
+
+.missions-table tbody tr:nth-child(odd) {
+  background-color: #dfdfdf;
+}
+
+.missions-title {
+  font-weight: 700;
+}
+
+.missions-description {
+  width: 80%;
+}

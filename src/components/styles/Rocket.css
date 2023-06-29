@@ -1,0 +1,52 @@
+.listContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.details {
+  padding-top: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.rocketName {
+  padding-bottom: 0.5rem;
+}
+
+.rocketDispription {
+  padding-bottom: 1rem;
+}
+
+.reservationBtn,
+.cancellationBtn {
+  padding: 0.35rem 0.5rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+}
+
+.reservationBtn {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.cancellationBtn {
+  background-color: #fff;
+  color: #777272;
+  border: 1px solid #777272;
+}
+
+.reservationBtn:hover,
+.cancellationBtn:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reserved {
+  padding: 0 0.5rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #18a2b8;
+  margin-right: 1rem;
+}
