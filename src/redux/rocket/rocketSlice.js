@@ -16,22 +16,27 @@ const rocketSlice = createSlice({
   name: 'Rockets',
   initialState: {
     rockets: [],
+    // bookedRockets: [],
     isLoading: true,
   },
   reducers: {
     bookReservation: (state, action) => {
       const rocketId = action.payload;
-      const rocket = state.rockets.find((rocket) => rocket.id === rocketId);
-      if (rocket) {
-        rocket.reserved = true;
-      }
+      state.rockets = state.rockets.map((rocket) => (rocket.id === rocketId
+        ? { ...rocket, reserved: true } : rocket));
+      // const rocket = state.rockets.find(
+      //   (rocket) => rocket.id === rocketId,
+      // );
+      // if (rocket) {
+      //   rocket.reserved = true;
+      //   state.bookedRockets.push(rocket);
+      // }
     },
     cancelReservation: (state, action) => {
       const rocketId = action.payload;
-      const rocket = state.rockets.find((rocket) => rocket.id === rocketId);
-      if (rocket) {
-        rocket.reserved = false;
-      }
+      state.rockets = state.rockets.map((rocket) => (rocket.id === rocketId
+        ? { ...rocket, reserved: false } : rocket));
+      // state.bookedRockets = state.bookedRockets.filter((rocket) => rocket.id !== rocketId);
     },
   },
   extraReducers: (builder) => {
