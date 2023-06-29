@@ -10,6 +10,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Deployment](#live-demo)
   - [Prerequisites](#prerequisites)
@@ -66,6 +67,12 @@
 - **[Users can join selected space missions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO LINK -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://spacetravelersapp.onrender.com/)
 
 <!-- GETTING STARTED -->
 
