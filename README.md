@@ -52,7 +52,7 @@
 </details>
 
 <details>
-  <summary>REACT</summary>
+  <summary>REDUX</summary>
   <ul>
     <li><a href="https://react-redux.js.org/">REDUX</a></li>
   </ul>
