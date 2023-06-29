@@ -63,8 +63,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Users can book rockets]**
-- **[Users can join selected space missions]**
+- **[Users can book rockets and cancel reservations]**
+- **[Users can join and leave selected space missions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,7 +99,7 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-- Install using Visual Code extention tab
+- Install using preferred terminal
 
 ```sh
     cd Space-Travelers-React-Group-Project
