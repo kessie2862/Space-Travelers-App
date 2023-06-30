@@ -28,7 +28,7 @@
 
 # 📖 Space Travelers App <a name="about-project"></a>
 
-Working with the real live data from the SpaceX API by building a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+Working with real live data from the SpaceX API by building a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
