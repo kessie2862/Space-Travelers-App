@@ -1,4 +1,4 @@
-# 📖 Space Travelers App
+# 📖 Space Travelers App.
 
 <a name="readme-top"></a>
 
